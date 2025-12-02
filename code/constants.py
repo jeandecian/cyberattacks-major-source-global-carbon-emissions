@@ -1,0 +1,1 @@
+RAW_DATA_DIRECTORY_PATH = "data/raw/"
