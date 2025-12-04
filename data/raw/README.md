@@ -63,9 +63,9 @@
 | denial-of-service_slowloris_rpi4b2_system_03.csv           | denial-of-service | slowloris              | rpi4b2          | system                 | 03             | csv       |
 | ransomware_bstry_rpi4b2_acs712.csv                         | ransomware        | bstry                  | rpi4b2          | acs712                 |                | csv       |
 | ransomware_bstry_rpi4b2_system.csv                         | ransomware        | bstry                  | rpi4b2          | system                 |                | csv       |
-| ransomware_jigsaw_rp4b4_prometheus.csv                     | ransomware        | jigsaw                 | rp4b4           | prometheus             |                | csv       |
+| ransomware_jigsaw_rpi4b4_prometheus.csv                    | ransomware        | jigsaw                 | rpi4b4          | prometheus             |                | csv       |
 | ransomware_jigsaw_vm_prometheus.csv                        | ransomware        | jigsaw                 | vm              | prometheus             |                | csv       |
-| ransomware_petya_rp4b4_prometheus.csv                      | ransomware        | petya                  | rp4b4           | prometheus             |                | csv       |
+| ransomware_petya_rpi4b4_prometheus.csv                     | ransomware        | petya                  | rpi4b4          | prometheus             |                | csv       |
 | ransomware_petya_vm_prometheus.csv                         | ransomware        | petya                  | vm              | prometheus             |                | csv       |
 | ransomware_randomware_rpi4b2_acs712.csv                    | ransomware        | randomware             | rpi4b2          | acs712                 |                | csv       |
 | ransomware_randomware_rpi4b2_system.csv                    | ransomware        | randomware             | rpi4b2          | system                 |                | csv       |
@@ -73,9 +73,9 @@
 | ransomware_ransomware-poc_rpi4b2_acs712_02.csv             | ransomware        | ransomware-poc         | rpi4b2          | acs712                 | 02             | csv       |
 | ransomware_ransomware-poc_rpi4b2_system_01.csv             | ransomware        | ransomware-poc         | rpi4b2          | system                 | 01             | csv       |
 | ransomware_ransomware-poc_rpi4b2_system_02.csv             | ransomware        | ransomware-poc         | rpi4b2          | system                 | 02             | csv       |
-| ransomware_rex_rp4b4_prometheus.csv                        | ransomware        | rex                    | rp4b4           | prometheus             |                | csv       |
+| ransomware_rex_rpi4b4_prometheus.csv                       | ransomware        | rex                    | rpi4b4          | prometheus             |                | csv       |
 | ransomware_rex_vm_prometheus.csv                           | ransomware        | rex                    | vm              | prometheus             |                | csv       |
-| ransomware_thanos_rp4b4_prometheus.csv                     | ransomware        | thanos                 | rp4b4           | prometheus             |                | csv       |
+| ransomware_thanos_rpi4b4_prometheus.csv                    | ransomware        | thanos                 | rpi4b4          | prometheus             |                | csv       |
 | ransomware_thanos_vm_prometheus.csv                        | ransomware        | thanos                 | vm              | prometheus             |                | csv       |
-| ransomware_wannacry_rp4b4_prometheus.csv                   | ransomware        | wannacry               | rp4b4           | prometheus             |                | csv       |
+| ransomware_wannacry_rpi4b4_prometheus.csv                  | ransomware        | wannacry               | rpi4b4          | prometheus             |                | csv       |
 | ransomware_wannacry_vm_prometheus.csv                      | ransomware        | wannacry               | vm              | prometheus             |                | csv       |
