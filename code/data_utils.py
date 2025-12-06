@@ -68,6 +68,10 @@ def clean_dataframe(file_path, df):
     return df
 
 
+def concat_dataframes(dfs):
+    return pd.concat(dfs)
+
+
 def feature_dataframe(file_path, df):
     if c.CPU_TEMPERATURE_MILLI in df.columns:
         df[c.CPU_TEMPERATURE] = df[c.CPU_TEMPERATURE_MILLI] / 1000

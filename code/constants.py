@@ -143,6 +143,8 @@ MODE = "Mode"
 POWER = "Power (W)"
 PREPROCESSED = "preprocessed"
 PREPROCESSED_DATA_DIRECTORY_PATH = "data/preprocessed/"
+PROCESSED = "processed"
+PROCESSED_DATA_DIRECTORY_PATH = "data/processed/"
 
 RAW = "raw"
 RAW_DATA_DIRECTORY_PATH = "data/raw/"
