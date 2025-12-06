@@ -1,0 +1,4 @@
+﻿Attack,Host,Run,Mode,CPU Temperature (°C),CPU Usage (%),Memory Usage (%),Power (W),Attack Type,Measurement,Timestamp,Memory Usage (Mo)
+Thanos,Windows 10 VM,1,Idle,50.1,15,13,2.3,Ransomware,Prometheus,00:00:00.000,188
+Thanos,Windows 10 VM,1,Attack,75.4,96,74,5.1,Ransomware,Prometheus,00:05:00.000,820
+Thanos,Windows 10 VM,1,Recovery,54.9,23,17,2.6,Ransomware,Prometheus,00:10:00.000,215

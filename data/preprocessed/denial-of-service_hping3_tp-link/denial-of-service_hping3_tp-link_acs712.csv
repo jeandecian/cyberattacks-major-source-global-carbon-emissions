@@ -1,0 +1,3 @@
+﻿Attack,Host,Run,Mode,Power (W),Attack Type,Measurement
+Hping3 (SYN),TP-Link Tapo C200,1,Idle,0.48,Denial of Service,ACS712
+Hping3 (SYN),TP-Link Tapo C200,1,Attack,0.5,Denial of Service,ACS712

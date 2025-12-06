@@ -1,0 +1,3 @@
+﻿Attack,Host,Run,Mode,CPU Usage (%),Memory Usage (%),Attack Type,Measurement
+XMRig (CPU),Raspberry Pi 4B 4GB,2,Idle,1.1,7.05,Cryptojacking,System
+XMRig (CPU),Raspberry Pi 4B 4GB,2,Attack,100.0,70.54,Cryptojacking,System

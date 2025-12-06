@@ -1,0 +1,4 @@
+﻿Attack,Host,Run,Mode,CPU Temperature (°C),CPU Usage (%),Memory Usage (%),Power (W),Attack Type,Measurement,Timestamp,Memory Usage (Mo)
+Petya,Windows 10 VM,1,Idle,48.9,12,11,2.1,Ransomware,Prometheus,00:00:00.000,182
+Petya,Windows 10 VM,1,Attack,71.8,97,69,4.6,Ransomware,Prometheus,00:05:00.000,789
+Petya,Windows 10 VM,1,Recovery,54.1,19,15,2.4,Ransomware,Prometheus,00:10:00.000,203

@@ -1,0 +1,3 @@
+﻿Attack,Host,Run,Mode,CPU Temperature (°C),CPU Usage (%),Memory Usage (%),Attack Type,Measurement
+XMRig (CPU),Raspberry Pi 5,1,Idle,48.18,1.2,27.95,Cryptojacking,System
+XMRig (CPU),Raspberry Pi 5,1,Attack,63.63,100.0,86.75,Cryptojacking,System

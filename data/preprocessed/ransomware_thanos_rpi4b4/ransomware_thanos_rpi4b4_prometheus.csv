@@ -1,0 +1,4 @@
+﻿Attack,Host,Run,Mode,CPU Temperature (°C),CPU Usage (%),Memory Usage (%),Power (W),Attack Type,Measurement,Timestamp,Memory Usage (Mo)
+Thanos,Raspberry Pi 4B 4GB,1,Idle,49.2,12,12,2.2,Ransomware,Prometheus,00:00:00.000,182
+Thanos,Raspberry Pi 4B 4GB,1,Attack,73.3,96,71,4.8,Ransomware,Prometheus,00:05:00.000,799
+Thanos,Raspberry Pi 4B 4GB,1,Recovery,54.0,22,16,2.5,Ransomware,Prometheus,00:10:00.000,210
