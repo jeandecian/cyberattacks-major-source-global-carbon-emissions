@@ -8,24 +8,14 @@ markdown += "| File | Cyberattack Type | Cyberattack Identifier | Host Identifie
 markdown += "| --- | --- | --- | --- | --- | --- | --- |\n"
 
 for file_path in f.get_all_files_recursively(c.RAW_DATA_DIRECTORY_PATH):
-    file_path = file_path.split("/")[-1]
-    file_elements = file_path.split("_")
-    nb_elements = len(file_elements)
+    file_name = f.get_file_name(file_path)
+    file_elements = f.get_file_name_elements(file_name)
 
-    if nb_elements < 4:
+    if file_elements is None:
         continue
 
-    cyberattack_type = file_elements[0]
-    cyberattack_identifier = file_elements[1]
-    host_identifier = file_elements[2]
+    run_identifier = "" if len(file_elements) == 5 else file_elements[4]
 
-    if nb_elements == 4:
-        measurement_identifier, extension = file_elements[3].split(".")
-        run_identifier = ""
-    elif nb_elements == 5:
-        measurement_identifier = file_elements[3]
-        run_identifier, extension = file_elements[4].split(".")
-
-    markdown += f"| {file_path} | {cyberattack_type} | {cyberattack_identifier} | {host_identifier} | {measurement_identifier} | {run_identifier} | {extension} |\n"
+    markdown += f"| {file_name} | {' | '.join(file_elements[:4])} | {run_identifier} | {file_elements[-1]} |\n"
 
 f.save_file(f"{c.RAW_DATA_DIRECTORY_PATH}/README.md", markdown)
