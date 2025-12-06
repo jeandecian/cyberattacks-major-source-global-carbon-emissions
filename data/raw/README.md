@@ -54,7 +54,7 @@
 | denial-of-service_mhddos-udp_hosafe_acs712.log             | denial-of-service | mhddos-udp             | hosafe          | acs712                 |                | log       |
 | denial-of-service_mhddos-udp_rpi4b4_acs712.log             | denial-of-service | mhddos-udp             | rpi4b4          | acs712                 |                | log       |
 | denial-of-service_mhddos-udp_rpi4b4_nmon.html              | denial-of-service | mhddos-udp             | rpi4b4          | nmon                   |                | html      |
-| denial-of-service_pyflooder_rpi3b_system.csv               | denial-of-service | pyflooder              | rpi3b           | system                 |                | csv       |
+| denial-of-service_pyflooder_rpi4b8_system.csv              | denial-of-service | pyflooder              | rpi4b8          | system                 |                | csv       |
 | denial-of-service_slowloris_rpi4b2_acs712_01.csv           | denial-of-service | slowloris              | rpi4b2          | acs712                 | 01             | csv       |
 | denial-of-service_slowloris_rpi4b2_acs712_02.csv           | denial-of-service | slowloris              | rpi4b2          | acs712                 | 02             | csv       |
 | denial-of-service_slowloris_rpi4b2_acs712_03.csv           | denial-of-service | slowloris              | rpi4b2          | acs712                 | 03             | csv       |
