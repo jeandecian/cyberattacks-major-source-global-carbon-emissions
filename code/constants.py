@@ -102,6 +102,8 @@ EXTENSION_CSV = "csv"
 EXTENSION_HTML = "html"
 EXTENSION_LOG = "log"
 
+FIGURES_OUTPUT_DIRECTORY_PATH = "output/figures/"
+
 GPU_MEMORY_USAGE = "GPU Memory Usage (%)"
 GPU_POWER = "GPU Power (W)"
 GPU_TEMPERATURE = "GPU Temperature (°C)"
@@ -140,6 +142,11 @@ MEMORY_USAGE_FREE_MO = "Memory Free (Mo)"
 MEMORY_USAGE_TOTAL_MO = "Memory Usage (Mo)"
 MODE = "Mode"
 
+PLOT_SCATTERS_CONFIGURATIONS = {
+    "cryptojacking": {"color": "#1f77b4", "marker": "o"},
+    "denial-of-service": {"color": "#ff7f0e", "marker": "s"},
+    "ransomware": {"color": "#2ca02c", "marker": "D"},
+}
 POWER = "Power (W)"
 PREPROCESSED = "preprocessed"
 PREPROCESSED_DATA_DIRECTORY_PATH = "data/preprocessed/"
