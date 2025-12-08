@@ -1,0 +1,40 @@
+\begin{table}
+    \centering
+    \caption{\textbf{Baseline and cryptojacking-induced CPU Temperature}}
+    \label{tab:baseline_and_cryptojacking-induced_cpu_temperature}
+    \begin{tabular}{llrrr}
+        \toprule
+        \textbf{Study} & \textbf{Host} & \textbf{Base ($^\circ$C)} & \textbf{Attack ($^\circ$C)} & \textbf{Variation (\%)} \\
+        \midrule
+        C01 (CPU) & H03 & \num{42.00} & \num{61.22} & \num{45.76} \\
+        C02 (CPU) & H03 & \num{42.00} & \num{70.42} & \num{67.67} \\
+        C03 (CPU) & H03 & \num{42.00} & \num{76.83} & \num{82.93} \\
+        C04 (CPU) & H03 & \num{42.00} & \num{77.79} & \num{85.21} \\
+        C05 (CPU) & H03 & \num{42.00} & \num{77.57} & \num{84.69} \\
+        C06 (CPU) & H01 & \num{37.00} & \num{59.00} & \num{59.46} \\
+        C06 (CPU) & H02 & \num{41.40} & \num{65.26} & \num{57.63} \\
+        C06 (CPU) & H03 & \num{42.00} & \num{79.57} & \num{89.45} \\
+        C06 (CPU) & L04 & \num{50.31} & \num{77.32} & \num{53.69} \\
+        C07 (GPU) & H04 & \num{59.22} & \num{69.71} & \num{17.71} \\
+        C08 (GPU) & H04 & \num{54.80} & \num{80.57} & \num{47.03} \\
+        C09 (GPU) & H04 & \num{63.43} & \num{75.92} & \num{19.69} \\
+        C10 (GPU) & H04 & \num{57.26} & \num{62.97} & \num{9.97} \\
+        C11 (GPU) & H04 & \num{59.08} & \num{62.52} & \num{5.82} \\
+        C12 (GPU) & H04 & \num{46.94} & \num{51.60} & \num{9.93} \\
+        C13 (GPU) & H04 & \num{51.99} & \num{72.70} & \num{39.83} \\
+        C14 (GPU) & H03 & \num{58.25} & \num{83.93} & \num{44.09} \\
+        C14 (GPU) & H06 & \num{50.00} & \num{67.50} & \num{35.00} \\
+        C15 (GPU) & H04 & \num{44.78} & \num{48.56} & \num{8.44} \\
+        C16 (CPU) & L04 & \num{50.50} & \num{84.40} & \num{67.13} \\
+        C16 (CPU) & L05 & \num{43.80} & \num{81.30} & \num{85.62} \\
+        C16 (CPU) & L06 & \num{55.00} & \num{83.70} & \num{52.18} \\
+        C16 (CPU) & L08 & \num{48.18} & \num{63.63} & \num{32.07} \\
+        \midrule
+        \multicolumn{2}{r}{Mean (CPU)} & \num{44.48} & \num{73.69} & \num{66.42} \\
+        \multicolumn{2}{r}{Mean (GPU)} & \num{54.58} & \num{67.60} & \num{23.75} \\
+        \midrule
+        \multicolumn{2}{r}{Mean} & \num{48.87} & \num{71.04} & \num{47.87} \\
+        \multicolumn{2}{r}{Median} & \num{48.18} & \num{72.70} & \num{47.03} \\
+        \bottomrule
+    \end{tabular}
+\end{table}

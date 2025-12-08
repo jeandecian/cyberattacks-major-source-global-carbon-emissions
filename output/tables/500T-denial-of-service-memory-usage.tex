@@ -1,0 +1,29 @@
+\begin{table}
+    \centering
+    \caption{\textbf{Baseline and denial of service-induced Memory Usage}}
+    \label{tab:baseline_and_denial_of_service-induced_memory_usage}
+    \begin{tabular}{llrrr}
+        \toprule
+        \textbf{Study} & \textbf{Host} & \textbf{Base (\%)} & \textbf{Attack (\%)} & \textbf{Variation (\%)} \\
+        \midrule
+        D01 (HTTP) & L06 & \num{6.19} & \num{19.97} & \num{222.62} \\
+        D02 (HTTP) & L06 & \num{5.43} & \num{5.83} & \num{7.37} \\
+        D04 (HTTP) & L06 & \num{5.90} & \num{6.30} & \num{6.78} \\
+        D05 (ICMP) & L06 & \num{7.41} & \num{8.08} & \num{9.04} \\
+        D06 (TCP) & L06 & \num{27.54} & \num{28.40} & \num{3.12} \\
+        D07 (UDP) & L06 & \num{7.53} & \num{8.33} & \num{10.62} \\
+        D08 (HTTP) & L07 & \num{2.64} & \num{2.73} & \num{3.41} \\
+        D09 (HTTP) & L05 & \num{19.29} & \num{19.50} & \num{1.09} \\
+        D09 (HTTP) & L05 & \num{22.11} & \num{22.02} & \num{-0.41} \\
+        D09 (HTTP) & L05 & \num{21.51} & \num{21.82} & \num{1.44} \\
+        \midrule
+        \multicolumn{2}{r}{Mean (HTTP)} & \num{11.87} & \num{14.02} & \num{34.61} \\
+        \multicolumn{2}{r}{Mean (ICMP)} & \num{7.41} & \num{8.08} & \num{9.04} \\
+        \multicolumn{2}{r}{Mean (TCP)} & \num{27.54} & \num{28.40} & \num{3.12} \\
+        \multicolumn{2}{r}{Mean (UDP)} & \num{7.53} & \num{8.33} & \num{10.62} \\
+        \midrule
+        \multicolumn{2}{r}{Mean} & \num{12.56} & \num{14.30} & \num{26.51} \\
+        \multicolumn{2}{r}{Median} & \num{7.47} & \num{13.92} & \num{5.10} \\
+        \bottomrule
+    \end{tabular}
+\end{table}

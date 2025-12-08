@@ -1,0 +1,37 @@
+\begin{table}
+    \centering
+    \caption{\textbf{Baseline and denial of service-induced Power Consumption}}
+    \label{tab:baseline_and_denial_of_service-induced_power_consumption}
+    \begin{tabular}{llrrr}
+        \toprule
+        \textbf{Study} & \textbf{Host} & \textbf{Base (W)} & \textbf{Attack (W)} & \textbf{Variation (\%)} \\
+        \midrule
+        D01 (HTTP) & L06 & \num{2.93} & \num{3.86} & \num{31.74} \\
+        D02 (HTTP) & L02 & \num{1.20} & \num{1.29} & \num{7.50} \\
+        D02 (HTTP) & L06 & \num{2.43} & \num{3.09} & \num{27.16} \\
+        D03 (SYN) & L01 & \num{2.90} & \num{4.40} & \num{51.72} \\
+        D03 (SYN) & L02 & \num{3.51} & \num{3.60} & \num{2.56} \\
+        D03 (SYN) & L03 & \num{1.64} & \num{2.02} & \num{23.17} \\
+        D03 (SYN) & L09 & \num{0.48} & \num{0.50} & \num{4.17} \\
+        D04 (HTTP) & L06 & \num{2.90} & \num{2.89} & \num{-0.34} \\
+        D05 (ICMP) & L02 & \num{1.26} & \num{1.28} & \num{1.59} \\
+        D05 (ICMP) & L06 & \num{2.32} & \num{4.88} & \num{110.34} \\
+        D06 (TCP) & L02 & \num{1.18} & \num{1.54} & \num{30.51} \\
+        D06 (TCP) & L06 & \num{2.46} & \num{4.64} & \num{88.62} \\
+        D07 (UDP) & L02 & \num{1.33} & \num{1.45} & \num{9.02} \\
+        D07 (UDP) & L06 & \num{2.43} & \num{3.55} & \num{46.09} \\
+        D09 (HTTP) & L05 & \num{2.87} & \num{3.12} & \num{8.71} \\
+        D09 (HTTP) & L05 & \num{2.88} & \num{2.92} & \num{1.39} \\
+        D09 (HTTP) & L05 & \num{2.78} & \num{2.99} & \num{7.55} \\
+        \midrule
+        \multicolumn{2}{r}{Mean (HTTP)} & \num{2.57} & \num{2.88} & \num{11.96} \\
+        \multicolumn{2}{r}{Mean (ICMP)} & \num{1.79} & \num{3.08} & \num{55.96} \\
+        \multicolumn{2}{r}{Mean (SYN)} & \num{2.13} & \num{2.63} & \num{20.40} \\
+        \multicolumn{2}{r}{Mean (TCP)} & \num{1.82} & \num{3.09} & \num{59.57} \\
+        \multicolumn{2}{r}{Mean (UDP)} & \num{1.88} & \num{2.50} & \num{27.56} \\
+        \midrule
+        \multicolumn{2}{r}{Mean} & \num{2.21} & \num{2.82} & \num{26.56} \\
+        \multicolumn{2}{r}{Median} & \num{2.43} & \num{2.99} & \num{9.02} \\
+        \bottomrule
+    \end{tabular}
+\end{table}

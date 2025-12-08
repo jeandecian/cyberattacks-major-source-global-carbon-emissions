@@ -1,0 +1,36 @@
+\begin{table}
+    \centering
+    \caption{\textbf{Baseline and cryptojacking-induced CPU Usage}}
+    \label{tab:baseline_and_cryptojacking-induced_cpu_usage}
+    \begin{tabular}{llrrr}
+        \toprule
+        \textbf{Study} & \textbf{Host} & \textbf{Base (\%)} & \textbf{Attack (\%)} & \textbf{Variation (\%)} \\
+        \midrule
+        C06 (CPU) & H01 & \num{12.00} & \num{100.00} & \num{733.33} \\
+        C06 (CPU) & H02 & \num{5.08} & \num{39.40} & \num{675.59} \\
+        C06 (CPU) & L04 & \num{25.10} & \num{98.10} & \num{290.84} \\
+        C07 (GPU) & H04 & \num{9.44} & \num{20.13} & \num{113.24} \\
+        C08 (GPU) & H04 & \num{8.54} & \num{10.33} & \num{20.96} \\
+        C09 (GPU) & H04 & \num{12.27} & \num{15.81} & \num{28.85} \\
+        C10 (GPU) & H04 & \num{5.75} & \num{2.01} & \num{-65.04} \\
+        C11 (GPU) & H04 & \num{6.35} & \num{1.70} & \num{-73.23} \\
+        C12 (GPU) & H04 & \num{8.46} & \num{30.55} & \num{261.11} \\
+        C13 (GPU) & H04 & \num{11.24} & \num{11.71} & \num{4.18} \\
+        C14 (GPU) & H03 & \num{6.06} & \num{89.36} & \num{1374.59} \\
+        C14 (GPU) & H06 & \num{10.00} & \num{100.00} & \num{900.00} \\
+        C15 (GPU) & H04 & \num{3.41} & \num{4.51} & \num{32.26} \\
+        C16 (CPU) & L04 & \num{1.12} & \num{100.00} & \num{8828.57} \\
+        C16 (CPU) & L05 & \num{0.50} & \num{100.00} & \num{19900.00} \\
+        C16 (CPU) & L06 & \num{0.10} & \num{100.00} & \num{99900.00} \\
+        C16 (CPU) & L06 & \num{1.10} & \num{100.00} & \num{8990.91} \\
+        C16 (CPU) & L06 & \num{1.00} & \num{100.00} & \num{9900.00} \\
+        C16 (CPU) & L08 & \num{1.20} & \num{100.00} & \num{8233.33} \\
+        \midrule
+        \multicolumn{2}{r}{Mean (CPU)} & \num{5.24} & \num{93.06} & \num{17494.73} \\
+        \multicolumn{2}{r}{Mean (GPU)} & \num{8.15} & \num{28.61} & \num{259.69} \\
+        \midrule
+        \multicolumn{2}{r}{Mean} & \num{6.77} & \num{59.14} & \num{8423.66} \\
+        \multicolumn{2}{r}{Median} & \num{6.06} & \num{89.36} & \num{675.59} \\
+        \bottomrule
+    \end{tabular}
+\end{table}

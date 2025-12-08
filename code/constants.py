@@ -151,8 +151,75 @@ RAW_DATA_DIRECTORY_PATH = "data/raw/"
 REGEX_PATTERN_GOOGLE_VISUALIZATION_ARRAY = r"var\s+(data_[A-Za-z0-9_]+)\s*=\s*google\.visualization\.arrayToDataTable\(\s*\[(.*?)\]\s*\)"
 REGEX_PATTERN_GOOGLE_VISUALIZATION_ARRAY_HEADER = r"\[\s*(?:\{.*?\}\s*,\s*)?(.*?)\]"
 REGEX_PATTERN_GOOGLE_VISUALIZATION_ARRAY_ROW = r"\['Date\((.*?)\)'\s*,\s*(.*?)\]"
+REPORTED_ATTACKS = {
+    "CoinIMP (CPU) (10%)": "C01 (CPU)",
+    "CoinIMP (CPU) (20%)": "C02 (CPU)",
+    "CoinIMP (CPU) (30%)": "C03 (CPU)",
+    "CoinIMP (CPU) (40%)": "C04 (CPU)",
+    "CoinIMP (CPU) (50%)": "C05 (CPU)",
+    "CoinIMP (CPU) (100%)": "C06 (CPU)",
+    "CoinIMP (CPU) (100%)": "C06 (CPU)",
+    "GMiner (GPU)": "C07 (GPU)",
+    "lolMiner (GPU)": "C08 (GPU)",
+    "miniZ (GPU)": "C09 (GPU)",
+    "NBMiner (GPU)": "C10 (GPU)",
+    "NiceHash (GPU)": "C11 (GPU)",
+    "OneZeroMiner (GPU)": "C12 (GPU)",
+    "SRBMiner Multi (GPU)": "C13 (GPU)",
+    "T-Rex (GPU)": "C14 (GPU)",
+    "WildRig Multi (GPU)": "C15 (GPU)",
+    "XMRig (CPU)": "C16 (CPU)",
+    "GoldenEye (HTTP)": "D01 (HTTP)",
+    "Goloris (HTTP)": "D02 (HTTP)",
+    "Hping3 (SYN)": "D03 (SYN)",
+    "HULK (HTTP)": "D04 (HTTP)",
+    "MHDDoS (ICMP)": "D05 (ICMP)",
+    "MHDDoS (TCP)": "D06 (TCP)",
+    "MHDDoS (UDP)": "D07 (UDP)",
+    "PyFlooder (HTTP)": "D08 (HTTP)",
+    "Slowloris (HTTP)": "D09 (HTTP)",
+    "Bstry": "R01",
+    "Jigsaw": "R02",
+    "Petya": "R03",
+    "Randomware": "R04",
+    "Ransomware-PoC": "R05",
+    "Rex": "R06",
+    "Thanos": "R07",
+    "WannaCry": "R08",
+}
+REPORTED_DATA_DIRECTORY_PATH = "data/reported/"
+REPORTED_HOSTS = {
+    "Apple M1 Pro": "H01",
+    "Apple MacBook Pro i7 2013": "H02",
+    "ASUS Zenbook UX51VZ": "H03",
+    "HP Victus 16-d0417nf": "H04",
+    "Windows 10 VM": "H05",
+    "Windows 11 i7 GeForce RTX 4060 Laptop": "H06",
+    "D-Link DIR-822": "L01",
+    "HOSAFE HX-2PT1": "L02",
+    "Huawei H151-381": "L03",
+    "Raspberry Pi 3B 1GB": "L04",
+    "Raspberry Pi 4B 2GB": "L05",
+    "Raspberry Pi 4B 4GB": "L06",
+    "Raspberry Pi 4B 8GB": "L07",
+    "Raspberry Pi 5": "L08",
+    "TP-Link Tapo C200": "L09",
+}
+REPORTED_METRICS = [
+    CPU_POWER,
+    CPU_TEMPERATURE,
+    CPU_USAGE,
+    GPU_MEMORY_USAGE,
+    GPU_TEMPERATURE,
+    GPU_USAGE,
+    MEMORY_USAGE,
+    POWER,
+]
 RUN = "Run"
 
+STUDY = "Study"
+
+TABLES_OUTPUT_DIRECTORY_PATH = "output/tables/"
 TIME_MILLI = ".000"
 TIME_ZERO_LEFT = "00:"
 TIME_ZERO_RIGHT = ":00"
