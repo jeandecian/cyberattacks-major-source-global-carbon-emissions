@@ -102,7 +102,7 @@ EXTENSION_CSV = "csv"
 EXTENSION_HTML = "html"
 EXTENSION_LOG = "log"
 
-FIGURES_OUTPUT_DIRECTORY_PATH = "output/figures/"
+FIGURES_OUTPUT_DIRECTORY_PATH = "output/figures"
 
 GPU_MEMORY_USAGE = "GPU Memory Usage (%)"
 GPU_POWER = "GPU Power (W)"
@@ -149,12 +149,12 @@ PLOT_SCATTERS_CONFIGURATIONS = {
 }
 POWER = "Power (W)"
 PREPROCESSED = "preprocessed"
-PREPROCESSED_DATA_DIRECTORY_PATH = "data/preprocessed/"
+PREPROCESSED_DATA_DIRECTORY_PATH = "data/preprocessed"
 PROCESSED = "processed"
-PROCESSED_DATA_DIRECTORY_PATH = "data/processed/"
+PROCESSED_DATA_DIRECTORY_PATH = "data/processed"
 
 RAW = "raw"
-RAW_DATA_DIRECTORY_PATH = "data/raw/"
+RAW_DATA_DIRECTORY_PATH = "data/raw"
 REGEX_PATTERN_GOOGLE_VISUALIZATION_ARRAY = r"var\s+(data_[A-Za-z0-9_]+)\s*=\s*google\.visualization\.arrayToDataTable\(\s*\[(.*?)\]\s*\)"
 REGEX_PATTERN_GOOGLE_VISUALIZATION_ARRAY_HEADER = r"\[\s*(?:\{.*?\}\s*,\s*)?(.*?)\]"
 REGEX_PATTERN_GOOGLE_VISUALIZATION_ARRAY_ROW = r"\['Date\((.*?)\)'\s*,\s*(.*?)\]"
@@ -194,7 +194,7 @@ REPORTED_ATTACKS = {
     "Thanos": "R07",
     "WannaCry": "R08",
 }
-REPORTED_DATA_DIRECTORY_PATH = "data/reported/"
+REPORTED_DATA_DIRECTORY_PATH = "data/reported"
 REPORTED_HOSTS = {
     "Apple M1 Pro": "H01",
     "Apple MacBook Pro i7 2013": "H02",
@@ -226,7 +226,7 @@ RUN = "Run"
 
 STUDY = "Study"
 
-TABLES_OUTPUT_DIRECTORY_PATH = "output/tables/"
+TABLES_OUTPUT_DIRECTORY_PATH = "output/tables"
 TIME_MILLI = ".000"
 TIME_ZERO_LEFT = "00:"
 TIME_ZERO_RIGHT = ":00"
