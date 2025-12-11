@@ -3,6 +3,11 @@ ACS712_VOLTAGES = {
     "rpi4b4": 5,
 }
 ATTACK = "Attack"
+ATTACK_CATEGORIES = {
+    "cryptojacking": ("CPU", "GPU"),
+    "denial-of-service": ("HTTP", "ICMP", "SYN", "TCP", "UDP"),
+    "ransomware": (),
+}
 ATTACK_MODE_000101 = {
     "idle": "00:00:00.000",
     "attack": "00:01:00.000",
@@ -222,6 +227,16 @@ REPORTED_METRICS = [
     MEMORY_USAGE,
     POWER,
 ]
+REPORTED_METRICS_NAME = {
+    "cpu-power-consumption": CPU_POWER,
+    "cpu-temperature": CPU_TEMPERATURE,
+    "cpu-usage": CPU_USAGE,
+    "gpu-memory-usage": GPU_MEMORY_USAGE,
+    "gpu-temperature": GPU_TEMPERATURE,
+    "gpu-usage": GPU_USAGE,
+    "memory-usage": MEMORY_USAGE,
+    "power-consumption": POWER,
+}
 RUN = "Run"
 
 STUDY = "Study"

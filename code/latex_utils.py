@@ -18,12 +18,37 @@ def create_numbers_list_latex(numbers):
     return [f"\\num{{{number:.2f}}}" for number in numbers]
 
 
-def generate_content(df):
+def generate_attack_metric_table(attack, metric, df):
+    if "Power" in metric:
+        metric = metric.replace("Power", "Power Consumption")
+
+    caption = f"Baseline and {attack.lower()}-induced {metric.split(' (')[0]}"
+    columns = "llrrr"
+    headers = generate_headers(df.columns)
+
+    latex_table = generate_table_header(caption, columns, headers)
+    latex_table += generate_attack_metric_content(df)
+    latex_table += generate_table_mean_subtotals(attack, df)
+    latex_table += generate_table_mean_median_totals(df)
+    latex_table += generate_table_footer()
+
+    return latex_table
+
+
+def generate_caption_label(caption):
+    label = f"tab:{'_'.join(caption.lower().split())}"
+
+    return f"""\\caption{{\\textbf{{{caption}}}}}
+    \\label{{{label}}}"""
+
+
+def generate_attack_metric_content(df):
     content = ""
 
     for index, row in df.iterrows():
-        study, host, base_metric, attack_metric, variation = row
-        content += f"""    {str(study)} & {str(host)} & \\num{{{base_metric:.2f}}} & \\num{{{attack_metric:.2f}}} & \\num{{{variation:.2f}}} \\\\
+        study, host = row[0:2]
+        numbers = create_numbers_list_latex(row[2:])
+        content += f"""    {str(study)} & {str(host)} & {" & ".join(numbers)} \\\\
     """
 
     return content
@@ -51,68 +76,49 @@ def generate_subtotal_mean_of(means, description):
     """
 
 
-def generate_table(attack, metric, df):
-    if "Power" in metric:
-        metric = metric.replace("Power", "Power Consumption")
+def generate_table_footer(span=""):
+    return f"""    \\bottomrule
+    \\end{{tabular}}
+\\end{{table{span}}}"""
 
-    caption = f"Baseline and {attack.lower()}-induced {metric.split(' (')[0]}"
-    label = f"tab:{'_'.join(caption.lower().split())}"
-    headers = generate_headers(df.columns)
 
-    latex_table = f"""\\begin{{table}}
+def generate_table_header(caption, columns, headers, span=""):
+    return f"""\\begin{{table{span}}}
     \\centering
-    \\caption{{\\textbf{{{caption}}}}}
-    \\label{{{label}}}
-    \\begin{{tabular}}{{llrrr}}
+    {generate_caption_label(caption)}
+    \\begin{{tabular}}{{{columns}}}
         \\toprule
         {" & ".join(headers)} \\\\
         \\midrule
     """
 
-    latex_table += generate_content(df)
 
-    if attack == "Cryptojacking":
-        temp_table = []
-
-        for description in ("CPU", "GPU"):
-            means = calculate_mean_where(df, description)
-            subtotal = generate_subtotal_mean_of(means, description)
-
-            if subtotal != "":
-                temp_table.append(subtotal)
-
-        if len(temp_table) > 1:
-            latex_table += f"""    \\midrule
-    """
-            latex_table += "".join(temp_table)
-    elif attack == "Denial of Service":
-        temp_table = []
-
-        for description in ("HTTP", "ICMP", "SYN", "TCP", "UDP"):
-            means = calculate_mean_where(df, description)
-            subtotal = generate_subtotal_mean_of(means, description)
-
-            if subtotal != "":
-                temp_table.append(subtotal)
-
-        if len(temp_table) > 1:
-            latex_table += f"""    \\midrule
-    """
-            latex_table += "".join(temp_table)
-
+def generate_table_mean_median_totals(df):
     means = calculate_mean(df)
     means_list = create_numbers_list_latex(means)
 
     medians = calculate_median(df)
     medians_list = create_numbers_list_latex(medians)
 
-    latex_table += f"""    \\midrule
+    return f"""    \\midrule
         \\multicolumn{{2}}{{r}}{{Mean}} & {" & ".join(means_list)} \\\\
         \\multicolumn{{2}}{{r}}{{Median}} & {" & ".join(medians_list)} \\\\
     """
 
-    latex_table += f"""    \\bottomrule
-    \\end{{tabular}}
-\\end{{table}}"""
 
-    return latex_table
+def generate_table_mean_subtotals(attack, df):
+    subtotals = []
+
+    descriptions = c.ATTACK_CATEGORIES.get(attack.lower().replace(" ", "-"), ())
+    for description in descriptions:
+        means = calculate_mean_where(df, description)
+        subtotal = generate_subtotal_mean_of(means, description)
+
+        if subtotal != "":
+            subtotals.append(subtotal)
+
+    if len(subtotals) < 2:
+        return ""
+
+    return f"""    \\midrule
+    {"".join(subtotals)}"""

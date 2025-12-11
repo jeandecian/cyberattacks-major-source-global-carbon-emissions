@@ -77,7 +77,9 @@ for attack_id, attack_type in c.ATTACK_TYPES.items():
         )
         idle_attack_df.drop(columns=[c.RUN], inplace=True)
 
-        latex_table = l.generate_table(attack_type, metric_column, idle_attack_df)
+        latex_table = l.generate_attack_metric_table(
+            attack_type, metric_column, idle_attack_df
+        )
 
         if "Power" in metric_column:
             metric_column = metric_column.replace("Power", "Power Consumption")
