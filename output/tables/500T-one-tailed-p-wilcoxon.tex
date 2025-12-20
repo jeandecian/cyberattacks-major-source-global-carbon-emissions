@@ -1,0 +1,34 @@
+\begin{table*}
+    \centering
+    \caption{\textbf{Inferential Statistical Results Grouped by Metric (One-Tailed Wilcoxon Signed-Rank Test)}}
+    \label{tab:inferential_statistical_results_grouped_by_metric_(one-tailed_wilcoxon_signed-rank_test)}
+    \begin{tabular}{llccccc}
+        \toprule
+        \textbf{Metric} & \textbf{Attack Type} & \textbf{n} & \textbf{Wilcoxon Statistic $W$} & \textbf{P-Value} & \textbf{Significance ($\alpha=0.05$)} \\
+        \midrule
+        CPU Power Consumption (W) & Cryptojacking & \num{15} & \num{111.00} & \num{1.01e-03} & Yes \\
+        \midrule
+        CPU Temperature ($^\circ$C) & Cryptojacking & \num{23} & \num{276.00} & \num{1.19e-07} & Yes \\
+        & Denial of Service & \num{6} & \num{19.00} & \num{4.69e-02} & Yes \\
+        & Ransomware & \num{14} & \num{105.00} & \num{4.89e-04} & Yes \\
+        \midrule
+        CPU Usage (\%) & Cryptojacking & \num{19} & \num{179.00} & \num{1.05e-04} & Yes \\
+        & Denial of Service & \num{10} & \num{51.00} & \num{6.84e-03} & Yes \\
+        & Ransomware & \num{14} & \num{105.00} & \num{4.78e-04} & Yes \\
+        \midrule
+        GPU Memory Usage (\%) & Cryptojacking & \num{9} & \num{45.00} & \num{1.95e-03} & Yes \\
+        \midrule
+        GPU Temperature ($^\circ$C) & Cryptojacking & \num{9} & \num{45.00} & \num{1.95e-03} & Yes \\
+        \midrule
+        GPU Usage (\%) & Cryptojacking & \num{10} & \num{55.00} & \num{9.77e-04} & Yes \\
+        \midrule
+        Memory Usage (\%) & Cryptojacking & \num{18} & \num{171.00} & \num{3.81e-06} & Yes \\
+        & Denial of Service & \num{10} & \num{53.50} & \num{2.93e-03} & Yes \\
+        & Ransomware & \num{14} & \num{104.00} & \num{5.92e-04} & Yes \\
+        \midrule
+        Power Consumption (W) & Cryptojacking & \num{2} & \num{3.00} & \num{2.50e-01} & No \\
+        & Denial of Service & \num{17} & \num{152.00} & \num{1.75e-04} & Yes \\
+        & Ransomware & \num{14} & \num{105.00} & \num{4.87e-04} & Yes \\
+        \bottomrule
+    \end{tabular}
+\end{table*}

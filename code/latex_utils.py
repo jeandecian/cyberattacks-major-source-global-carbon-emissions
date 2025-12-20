@@ -66,6 +66,48 @@ def generate_headers(columns):
     return headers
 
 
+def generate_statistical_content(df):
+    content = ""
+
+    previous_metric = ""
+    for index, row in df.iterrows():
+        current_metric = ""
+        if row.iloc[0] != previous_metric and previous_metric != "":
+            current_metric = f"""{str(row.iloc[0])} """
+            content += """    \\midrule
+    """
+        elif row.iloc[0] != previous_metric:
+            current_metric = f"""{str(row.iloc[0])} """
+
+        content += f"""    {current_metric}& {str(row.iloc[1])} & \\num{{{row.iloc[2]}}} & \\num{{{row.iloc[3]:.2f}}} & \\num{{{row.iloc[4]:.2e}}} & {str(row.iloc[-1])} \\\\
+    """
+
+        previous_metric = row.iloc[0]
+
+    return content
+
+
+def generate_statistical_table(headers, df):
+    caption = "Inferential Statistical Results Grouped by Metric (One-Tailed Wilcoxon Signed-Rank Test)"
+    columns = "llccccc"
+
+    headers = generate_headers(headers)
+    latex_table = generate_table_header(caption, columns, headers, "*")
+
+    for unit in c.LATEX_UNITS:
+        df["Metric"] = (
+            df["Metric"]
+            .astype(str)
+            .str.replace(unit, c.LATEX_UNITS.get(unit, unit))
+            .str.rstrip()
+        )
+
+    latex_table += generate_statistical_content(df)
+    latex_table += generate_table_footer("*")
+
+    return latex_table
+
+
 def generate_subtotal_mean_of(means, description):
     if str(means[0]) == "nan":
         return ""

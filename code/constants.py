@@ -133,6 +133,8 @@ HOST_NAMES = {
     "zenbook": "ASUS Zenbook UX51VZ",
 }
 
+LATEX_UNITS = {"(%)": "(\%)", "(°C)": "($^\circ$C)"}
+
 MEASUREMENT = "Measurement"
 MEASUREMENT_TOOLS = {
     "acs712": "ACS712",
