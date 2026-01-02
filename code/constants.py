@@ -146,7 +146,7 @@ MEASUREMENT_TOOLS = {
 }
 MEMORY_USAGE = "Memory Usage (%)"
 MEMORY_USAGE_FREE_MO = "Memory Free (Mo)"
-MEMORY_USAGE_TOTAL_MO = "Memory Usage (Mo)"
+MEMORY_USAGE_TOTAL_MO = "Memory Total (Mo)"
 MODE = "Mode"
 
 PLOT_SCATTERS_CONFIGURATIONS = {
