@@ -341,7 +341,7 @@ CLEANED_HEADERS = {
     "data_RUNQBLOCK_Blocked": "Processes Blocked",
     "data_RUNQBLOCK_Runnable": "Processes Runnable",
     "data_SWAP_LINUX_swapfree": "Swap Free (Mo)",
-    "data_SWAP_LINUX_swaptotal": "Swap Usage (Mo)",
+    "data_SWAP_LINUX_swaptotal": "Swap Total (Mo)",
     "Disque chiffré (%)": "Encrypted Disk Usage (%)",
     "Ecriture disque (Mo/s)": "Disk Write (Mo/s)",
     "Fichiers chiffrés": "Encrypted Files",
@@ -712,7 +712,7 @@ ORDERED_HEADERS = [
     "Processes Blocked",
     "Processes Runnable",
     "Swap Free (Mo)",
-    "Swap Usage (Mo)",
+    "Swap Total (Mo)",
     VOLTAGE,
     VOLTAGE_ADJUSTED,
 ]
